@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button A"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button B (Right of A)"
+        android:layout_toEndOf="@id/button_a"
+        android:layout_alignTop="@id/button_a"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/button_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button C (Below A)"
+        android:layout_below="@id/button_a"
+        android:layout_alignStart="@id/button_a"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/button_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button C"
+        android:layout_toEndOf="@+id/button_c"
+android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+</RelativeLayout>
